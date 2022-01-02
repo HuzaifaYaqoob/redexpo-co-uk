@@ -21,8 +21,8 @@ const Logo = () => {
 
 const Header = () => {
     return (
-        <div className="w-full bg-white">
-            <div className="w-full max-w-7xl mx-auto p-2 flex items-center justify-between">
+        <div className="w-full bg-white ">
+            <div className="relative w-full max-w-7xl mx-auto p-2 flex items-center justify-between">
                 <Logo />
                 <Navigation />
             </div>
