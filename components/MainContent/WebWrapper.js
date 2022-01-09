@@ -2,6 +2,7 @@
 import Header from "../Header/Header"
 import Head from 'next/head'
 
+import Footer from "../Footer/Footer"
 
 const WebWrapper = (props) => {
     return (
@@ -14,6 +15,7 @@ const WebWrapper = (props) => {
             {
                 props.children
             }
+            <Footer />
         </>
     )
 }

@@ -75,11 +75,11 @@ const Navigation = () => {
                     </div>
 
                     <NavigationsLink active={ROUTES.HOME.includes(route.asPath) ? true : false} text='Home' to='/' />
-                    <NavigationsLink active={ROUTES.SERVICES.includes(route.asPath) ? true : false} text='Services' to='#Services' />
-                    <NavigationsLink active={ROUTES.PRICING.includes(route.asPath) ? true : false} text='Pricing' to='#Pricing' />
-                    <NavigationsLink active={ROUTES.CONTACT.includes(route.asPath) ? true : false} text='Contact Us' to='#Contact' />
-                    <NavigationsLink active={ROUTES.ABOUT.includes(route.asPath) ? true : false} text='About Us' to='/' />
-                    <GradientButton text='Get a qoute' />
+                    <NavigationsLink active={ROUTES.SERVICES.includes(route.asPath) ? true : false} text='Services' to='/#services' />
+                    <NavigationsLink active={ROUTES.PRICING.includes(route.asPath) ? true : false} text='Pricing' to='/#pricing' />
+                    <NavigationsLink active={ROUTES.CONTACT.includes(route.asPath) ? true : false} text='Contact Us' to='/#contact' />
+                    <NavigationsLink active={ROUTES.ABOUT.includes(route.asPath) ? true : false} text='About Us' to='/#about' />
+                    <GradientButton>Get a qoute</GradientButton>
                 </div>
             </OutsideClickHandler>
         </div>

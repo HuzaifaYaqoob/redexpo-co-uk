@@ -16,3 +16,6 @@ a {
 .text-dark-RE{
   color: #060318;
 }
+html {
+  scroll-behavior: smooth;
+}

@@ -10,14 +10,13 @@ const HeadingSection = (props) => {
                 design & development solutions</p>
             <div className="flex items-center gap-3 mt-8">
 
+                <GradientButton>Contact Us</GradientButton>
                 <GradientButton
-                    text='Contact Us'
-                />
-                <GradientButton
-                    text='Our Partner Programme'
                     borderBtn
                     className='text-gray-900'
-                />
+                >
+                    Our Partner Programme
+                </GradientButton>
             </div>
         </div>
     )
