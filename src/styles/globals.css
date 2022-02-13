@@ -4,7 +4,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins';
+  font-family: 'Poppins' ,Roboto,sans-serif;
     box-sizing: border-box;
 }
 
