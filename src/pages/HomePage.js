@@ -6,12 +6,13 @@ import ReliableCustomers from '../components/HomePage/ReliableCustomers'
 import OurServicesSection from '../components/Services/OurServices'
 import ContactUs from '../components/Contactus/Contactus'
 
-
+import Header from '../components/Header/Header'
 import SplitLine from '../components/Utility/SplitLine'
 
 const HomePage = () => {
   return (
     <div className='w-full'>
+      <Header />
       <HeroSection />
       <ReliableCustomers />
       <OurServicesSection />

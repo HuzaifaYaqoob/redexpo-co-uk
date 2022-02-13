@@ -1,15 +1,12 @@
-import { useRouter } from "next/dist/client/router"
 import { useState } from "react"
 import { GradientButton } from "../Utility/Button"
-import OutsideClickHandler from "react-outside-click-handler/build/OutsideClickHandler"
+// import OutsideClickHandler from "react-outside-click-handler/build/OutsideClickHandler"
 
 export const NavigationsLink = ({ text, to, active, ...props }) => {
-    const route = useRouter()
     return (
         <p
             className={`cursor-pointer text-black ${active && 'text-red-600'} hover:bg-red-50 py-2 px-4 rounded`}
             onClick={() => {
-                to && route.push(to)
             }}
         >
             {text}
@@ -19,7 +16,6 @@ export const NavigationsLink = ({ text, to, active, ...props }) => {
 
 
 const Navigation = () => {
-    const route = useRouter()
     const [show_sm_nav, setSMNav] = useState(false)
 
     const ROUTES = {
@@ -57,11 +53,11 @@ const Navigation = () => {
             >
                 <img src="/images/menu.svg" className="w-8 cursor-pointer" />
             </div>
-            <OutsideClickHandler
+            {/* <OutsideClickHandler
                 onOutsideClick={() => {
                     setSMNav(false)
                 }}
-            >
+            > */}
                 <div
                     className={`${show_sm_nav ? 'flex' : 'hidden'} md:flex gap-1 p-4 items-start flex-col absolute left-4 right-4 top-full rounded shadow-md bg-white md:relative md:flex-row md:items-center md:shadow-none`}
                 >
@@ -74,14 +70,14 @@ const Navigation = () => {
                         <img src="/images/close.svg" className="w-5 cursor-pointer" />
                     </div>
 
-                    <NavigationsLink active={ROUTES.HOME.includes(route.asPath) ? true : false} text='Home' to='/' />
-                    <NavigationsLink active={ROUTES.SERVICES.includes(route.asPath) ? true : false} text='Services' to='/#services' />
-                    <NavigationsLink active={ROUTES.PRICING.includes(route.asPath) ? true : false} text='Pricing' to='/#pricing' />
-                    <NavigationsLink active={ROUTES.CONTACT.includes(route.asPath) ? true : false} text='Contact Us' to='/#contact' />
-                    <NavigationsLink active={ROUTES.ABOUT.includes(route.asPath) ? true : false} text='About Us' to='/#about' />
+                    <NavigationsLink text='Home' to='/' />
+                    <NavigationsLink text='Services' to='/#services' />
+                    <NavigationsLink text='Pricing' to='/#pricing' />
+                    <NavigationsLink text='Contact Us' to='/#contact' />
+                    <NavigationsLink text='About Us' to='/#about' />
                     <GradientButton>Get a qoute</GradientButton>
                 </div>
-            </OutsideClickHandler>
+            {/* </OutsideClickHandler> */}
         </div>
     )
 }

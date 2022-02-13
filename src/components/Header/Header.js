@@ -1,16 +1,14 @@
 
-import { useRouter } from "next/dist/client/router"
 import Navigation from "./Navigation"
 
 const Logo = () => {
-    const route = useRouter()
     return (
         <div>
             <img
                 src='/images/logo.svg'
                 className="cursor-pointer"
                 onClick={() => {
-                    route.push('/')
+                    // route.push('/')
                 }}
             />
         </div>
