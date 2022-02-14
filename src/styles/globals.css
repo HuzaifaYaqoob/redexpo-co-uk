@@ -19,3 +19,8 @@ a {
 html {
   scroll-behavior: smooth;
 }
+
+.major-font span{
+  font-family: 'Akaya Telivigala', cursive;
+  font-weight: 700;
+}

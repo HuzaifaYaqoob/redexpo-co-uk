@@ -8,11 +8,12 @@ import ContactUs from '../components/Contactus/Contactus'
 
 import Header from '../components/Header/Header'
 import SplitLine from '../components/Utility/SplitLine'
+import RedExpoStudio from '../components/HomePage/RedExpoStudio'
 
 const HomePage = () => {
   return (
     <div className='w-full'>
-      <Header />
+      <RedExpoStudio />
       <HeroSection />
       <ReliableCustomers />
       <OurServicesSection />

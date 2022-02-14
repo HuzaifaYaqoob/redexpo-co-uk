@@ -5,7 +5,7 @@ import { GradientButton } from "../Utility/Button"
 export const NavigationsLink = ({ text, to, active, ...props }) => {
     return (
         <p
-            className={`cursor-pointer text-black ${active && 'text-red-600'} hover:bg-red-50 py-2 px-4 rounded`}
+            className={`cursor-pointer text-gray-300 hover:text-white py-2 px-4 rounded`}
             onClick={() => {
             }}
         >
@@ -59,7 +59,7 @@ const Navigation = () => {
                 }}
             > */}
                 <div
-                    className={`${show_sm_nav ? 'flex' : 'hidden'} md:flex gap-1 p-4 items-start flex-col absolute left-4 right-4 top-full rounded shadow-md bg-white md:relative md:flex-row md:items-center md:shadow-none`}
+                    className={`${show_sm_nav ? 'flex' : 'hidden'} md:flex gap-1 p-4 items-start flex-col absolute left-4 right-4 top-full rounded shadow-md  md:relative md:flex-row md:items-center md:shadow-none`}
                 >
                     <div
                         className="absolute right-4 top-6 md:hidden"
@@ -75,7 +75,6 @@ const Navigation = () => {
                     <NavigationsLink text='Pricing' to='/#pricing' />
                     <NavigationsLink text='Contact Us' to='/#contact' />
                     <NavigationsLink text='About Us' to='/#about' />
-                    <GradientButton>Get a qoute</GradientButton>
                 </div>
             {/* </OutsideClickHandler> */}
         </div>
