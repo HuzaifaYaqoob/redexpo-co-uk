@@ -24,3 +24,7 @@ html {
   font-family: 'Akaya Telivigala', cursive;
   font-weight: 700;
 }
+
+.cubic-bezier-animation{
+  transition:cubic-bezier(0,1.48,1,-0.24);
+}

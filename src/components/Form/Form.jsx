@@ -3,7 +3,7 @@
 export const Label = ({ text }) => {
     return (
         <p
-            className="text-gray-500 mb-1"
+            className="text-gray-400 mb-1"
         >{text ? text : ''}</p>
     )
 }

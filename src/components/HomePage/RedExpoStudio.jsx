@@ -4,7 +4,7 @@
 const RedExpoStudio = () => {
     return (
         <>
-            <div className="container px-10 mx-auto text-white min-h-[60vh] flex items-center">
+            <div className="container px-36 mx-auto text-white min-h-[60vh] flex items-center">
                 {/* <h1
                     className="uppercase text-white font-black text-[100px]"
                     style={{
@@ -28,10 +28,10 @@ const RedExpoStudio = () => {
                             R
                             <span className="absolute text-4xl bottom-5 text-red-600">eact</span>
                         </span>
-                        <span className="relative top-24">
+                        <span className="relative top-20">
                             E
                         </span>
-                        <span className="relative bottom-10">
+                        <span className="relative bottom-3">
                             <span>
 
                             </span>
@@ -45,7 +45,7 @@ const RedExpoStudio = () => {
                             E
                             <span className="text-red-600 text-3xl absolute bottom-5 right-0 translate-x-full">xpress</span>
                         </span>
-                        <span className="relative bottom-[60px]">
+                        <span className="relative bottom-[20px]">
                             <span className="w-4 h-4 bg-orange-600 block absolute top-3 rounded-full -right-4"></span>
                             X
                             <span className="w-4 h-4 bg-yellow-600 block absolute bottom-2 rounded-full -left-4"></span>
@@ -54,7 +54,7 @@ const RedExpoStudio = () => {
                             P
                             <span className="text-red-600 text-3xl absolute bottom-5 right-0 translate-x-full">ostgreSQL</span>
                         </span>
-                        <span className="relative top-[80px]">
+                        <span className="relative top-[75px]">
                             O
                             <span className="absolute -bottom-7 -right-14 block max-w-max -rotate-90">
                                 <span className="w-14 h-14 block overflow-hidden rounded-lg">

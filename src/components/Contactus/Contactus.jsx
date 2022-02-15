@@ -11,7 +11,7 @@ const ContactUs = () => {
             </div>
 
             <div className="flex-1">
-                <h3 className="font-medium text-2xl mb-4">Get a qoute in <span className="text-red-600">24</span> hours</h3>
+                <h3 className="font-medium text-2xl mb-4 text-white">Get a qoute in <span className="text-red-600">24</span> hours</h3>
                 <div className="flex gap-5">
                     <InputField
                         label='Your Good Name'

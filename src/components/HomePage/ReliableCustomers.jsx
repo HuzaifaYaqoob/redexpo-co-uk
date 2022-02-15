@@ -14,8 +14,8 @@ const Customer = (props) => {
 const ReliableCustomers = () => {
     return (
         <div className="w-full px-5 mb-10">
-            <h3 className="text-center text-3xl font-semibold mb-4">Our Valueable <span className="text-red-600">Customers</span></h3>
-            <div className="max-w-4xl mx-auto w-full bg-white shadow-lg rounded py-2 px-4 mt-4 flex items-center flex-wrap ">
+            <h3 className="text-center text-3xl font-semibold mb-4 text-white">Our Valueable <span className="text-red-600">Customers</span></h3>
+            <div className="max-w-4xl mx-auto w-full bg-gray-800 shadow-lg rounded py-2 px-4 mt-4 flex items-center flex-wrap ">
                 <Customer imagePath='/images/customers/alpha-star-tech.png' />
                 <Customer imagePath='/images/customers/pentutor.webp' />
                 <Customer imagePath='/images/customers/kasi-eats.png' />
