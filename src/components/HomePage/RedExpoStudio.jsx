@@ -4,7 +4,7 @@
 const RedExpoStudio = () => {
     return (
         <>
-            <div className="container px-36 mx-auto text-white min-h-[60vh] flex items-center">
+            <div className="max-w-[1300px] px-36 mx-auto text-white min-h-[60vh] flex items-center">
                 {/* <h1
                     className="uppercase text-white font-black text-[100px]"
                     style={{
@@ -64,7 +64,7 @@ const RedExpoStudio = () => {
                             </span>
                         </span>
                     </div>
-                    <div className="max-w-max ml-auto space-x-11">
+                    <div className="max-w-max ml-auto space-x-11 mt-[100px]">
                         <span className="relative top-[50px]">S</span>
                         <span className="relative bottom-5">T</span>
                         <span className="relative top-[80px]">

@@ -41,12 +41,10 @@ const Logo = () => {
 const Header = () => {
     const [menu_active, setMenuActive] = useState(false)
     return (
-        <div className="w-full">
+        <div className="w-full relative z-[100]">
             <div className="relative w-full max-w-7xl mx-auto p-2 flex items-center justify-between">
                 <Logo />
-                <HamburgerIcon menu_active={menu_active} setMenuActive={setMenuActive} />
-
-
+                {/* <HamburgerIcon menu_active={menu_active} setMenuActive={setMenuActive} />
                 <div
                     className={`text-white fixed bottom-2 left-1/2 -translate-x-1/2 ${menu_active ? 'h-[400px]' : 'h-0'} rounded-lg max-w-[700px] w-full backdrop-blur-lg bg-black bg-opacity-50 transition-all duration-300 `}
                     style={{
@@ -60,7 +58,8 @@ const Header = () => {
                     >
                         <Navigation />
                     </OutsideClickHandler>
-                </div>
+                </div> */}
+                <Navigation />
             </div>
         </div >
     )

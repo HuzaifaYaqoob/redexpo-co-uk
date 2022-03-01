@@ -5,7 +5,7 @@ import { GradientButton } from "../Utility/Button"
 
 const ContactUs = () => {
     return (
-        <div className="max-w-7xl w-full mx-auto flex items-center flex-col md:flex-row px-5 md:px-0 mb-10" id='contact'>
+        <div className="max-w-7xl w-full mx-auto flex items-center flex-col md:flex-row px-5 md:px-0 pb-10" id='contact'>
             <div className="flex-1">
                 <img src='/images/contact-image-girl.svg' />
             </div>
