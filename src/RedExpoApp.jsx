@@ -1,4 +1,5 @@
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import HomePage from "./pages/HomePage";
 
@@ -8,10 +9,14 @@ import HomePage from "./pages/HomePage";
 const RedExpoApp = () => {
     return (
         <>
-            <div className="bg-[#0B1120]">
-                <Header />
-                <HomePage />
-            </div>
+            <BrowserRouter>
+                <div className="bg-[#0B1120]">
+                    <Header />
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                    </Routes>
+                </div>
+            </BrowserRouter>
         </>
     )
 }
