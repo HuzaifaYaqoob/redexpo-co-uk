@@ -7,7 +7,7 @@ const ContactUs = () => {
     return (
         <div className="max-w-7xl w-full mx-auto flex items-center flex-col md:flex-row px-5 md:px-0 pb-10" id='contact'>
             <div className="flex-1">
-                <img src='/images/contact-image-girl.svg' />
+                <img className="max-w-full max-h-[400px] mx-auto" src='/images/woman designer.png' />
             </div>
 
             <div className="flex-1">

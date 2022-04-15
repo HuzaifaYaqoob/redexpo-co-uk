@@ -9,6 +9,7 @@ import ContactUs from '../components/Contactus/Contactus'
 import SplitLine from '../components/Utility/SplitLine'
 import RedExpoStudio from '../components/HomePage/RedExpoStudio'
 import OurDisplay from '../components/HomePage/OurDisplay'
+import BecomeOurPartnerSection from '../components/HomePage/BecomeOurPartner'
 
 const HomePage = () => {
   return (
@@ -37,6 +38,7 @@ const HomePage = () => {
           <SplitLine text='or' />
         </div>
         <ContactUs />
+        <BecomeOurPartnerSection />
       </div>
     </div>
   )
