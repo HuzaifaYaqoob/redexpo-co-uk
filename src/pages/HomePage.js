@@ -10,6 +10,9 @@ import SplitLine from '../components/Utility/SplitLine'
 import RedExpoStudio from '../components/HomePage/RedExpoStudio'
 import OurDisplay from '../components/HomePage/OurDisplay'
 import BecomeOurPartnerSection from '../components/HomePage/BecomeOurPartner'
+import BusinessPartnerProgrammSection from '../components/HomePage/BusinessPartner'
+import MemberShipSection from '../components/Membership/MemberShipSection'
+import WhyChooseProgramme from '../components/HomePage/WhyChooseProgramme'
 
 const HomePage = () => {
   return (
@@ -39,6 +42,9 @@ const HomePage = () => {
         </div>
         <ContactUs />
         <BecomeOurPartnerSection />
+        <BusinessPartnerProgrammSection />
+        <MemberShipSection />
+        <WhyChooseProgramme />
       </div>
     </div>
   )
