@@ -13,6 +13,7 @@ import BecomeOurPartnerSection from '../components/HomePage/BecomeOurPartner'
 import BusinessPartnerProgrammSection from '../components/HomePage/BusinessPartner'
 import MemberShipSection from '../components/Membership/MemberShipSection'
 import WhyChooseProgramme from '../components/HomePage/WhyChooseProgramme'
+import Footer from '../components/Footer/Footer'
 
 const HomePage = () => {
   return (
@@ -45,6 +46,7 @@ const HomePage = () => {
         <BusinessPartnerProgrammSection />
         <MemberShipSection />
         <WhyChooseProgramme />
+        <Footer />
       </div>
     </div>
   )
