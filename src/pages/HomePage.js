@@ -46,7 +46,6 @@ const HomePage = () => {
         <BusinessPartnerProgrammSection />
         <MemberShipSection />
         <WhyChooseProgramme />
-        <Footer />
       </div>
     </div>
   )

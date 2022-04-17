@@ -1,11 +1,14 @@
 import { useState } from "react"
+import { useLocation, useNavigate, useRoutes  } from "react-router-dom"
 import { GradientButton } from "../Utility/Button"
 
 export const NavigationsLink = ({ text, to, active, ...props }) => {
+    const navigate = useNavigate()
     return (
         <p
             className={`cursor-pointer text-gray-300 hover:text-white py-2 px-4 rounded relative flex items-center gap-2`}
             onClick={() => {
+                navigate(to)
             }}
         >
             {
@@ -19,7 +22,8 @@ export const NavigationsLink = ({ text, to, active, ...props }) => {
 }
 
 
-const Navigation = () => {
+const Navigation = (props) => {
+    const path = useLocation()?.pathname
     const [show_sm_nav, setSMNav] = useState(false)
 
     const ROUTES = {
@@ -70,11 +74,11 @@ const Navigation = () => {
                     <img src="/images/close.svg" className="w-5 cursor-pointer" />
                 </div>
 
-                <NavigationsLink active text='Home' to='/' />
-                <NavigationsLink text='Services' to='/#services' />
-                <NavigationsLink text='Pricing' to='/#pricing' />
-                <NavigationsLink text='Contact Us' to='/#contact' />
-                <NavigationsLink text='About Us' to='/#about' />
+                <NavigationsLink active={ROUTES.HOME.includes(path)} text='Home' to='/' />
+                <NavigationsLink active={ROUTES.SERVICES.includes(path)} text='Services' to='/services' />
+                <NavigationsLink active={ROUTES.PRICING.includes(path)} text='Pricing' to='/pricing' />
+                <NavigationsLink active={ROUTES.CONTACT.includes(path)} text='Contact Us' to='/contact-us' />
+                <NavigationsLink active={ROUTES.ABOUT.includes(path)} text='About Us' to='/about-us' />
                 <GradientButton>Get a qoute</GradientButton>
             </div>
             {/* <div className="py-3 px-4 border-t border-gray-600 flex justify-end">

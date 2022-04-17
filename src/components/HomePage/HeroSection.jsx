@@ -4,8 +4,8 @@ const HeadingSection = (props) => {
     return (
         <div className="px-5 mb-10 md:mb-0">
             <h3 className="text-red-600">Your success partner</h3>
-            <h1 className="text-3xl md:text-left md:text-6xl mb-3 md:mb-9 font-medium text-dark-RE">Business value through digital products.</h1>
-            <p className="mb-9 md:mb-0 text-lg">Helping <span className="text-red-600">Startups</span> and <span className="text-red-600">Growth Companies</span>. We build
+            <h1 className="text-3xl md:text-left md:text-6xl mb-3 md:mb-9 font-medium text-white">Business value through digital products.</h1>
+            <p className="mb-9 md:mb-0 text-lg text-white">Helping <span className="text-red-600">Startups</span> and <span className="text-red-600">Growth Companies</span>. We build
                 custom softwares, providing reliable end-to-end
                 design & development solutions</p>
             <div className="flex items-center gap-3 mt-8">
@@ -13,7 +13,7 @@ const HeadingSection = (props) => {
                 <GradientButton>Contact Us</GradientButton>
                 <GradientButton
                     borderBtn
-                    className='text-gray-900'
+                    className='text-white'
                 >
                     Our Partner Programme
                 </GradientButton>

@@ -59,7 +59,7 @@ const MemberShipCard = ({ data, ...props }) => {
     return (
         <>
             <div
-                className={`flex-1 relative max-w-[400px] w-full rounded-[15px] shadow-gray-800 p-3 bg-white ${data.is_featured ? 'scale-110 shadow-xl pt-10 border-2 border-red-600' : 'pt-4 scale-90'} cursor-pointer `}
+                className={`flex-1 relative max-w-[400px] w-full rounded-[15px] shadow-gray-800 p-3 bg-white ${data.is_featured ? 'scale-110 shadow-xl pt-10 border-2 border-red-600' : 'pt-4 hover:scale-105 hover:shadow-lg'}  transition-all cursor-pointer `}
             >
                 {
                     data.is_featured &&
@@ -84,8 +84,8 @@ const MemberShipCard = ({ data, ...props }) => {
                         })
                     }
                 </div>
-                <div className={`w-max mx-auto border px-3 py-1.5 rounded-md mt-4 ${data.is_featured ? 'bg-red-600 text-white border-red-600' : 'text-gray-800 border-red-600'}`}>
-                    <p>Activate Membership</p>
+                <div className={`w-max mx-auto border transition-all px-3 py-1.5 rounded-md mt-4 ${data.is_featured ? 'bg-red-600 text-white border-red-600' : 'text-gray-800 border-red-600 hover:bg-red-600 hover:text-white'}`}>
+                    <p>Subscribe Now</p>
                 </div>
             </div>
         </>
