@@ -59,7 +59,7 @@ const MemberShipCard = ({ data, ...props }) => {
     return (
         <>
             <div
-                className={`flex-1 relative max-w-[400px] w-full rounded-[15px] shadow-gray-800 p-3 bg-white ${data.is_featured ? 'scale-110 shadow-xl pt-10 border-2 border-red-600' : 'pt-4 hover:scale-105 hover:shadow-lg'}  transition-all cursor-pointer `}
+                className={`flex-1 relative max-w-[400px] mx-auto sm:min-w-[300px] w-full rounded-[15px] shadow-gray-800 p-3 bg-white ${data.is_featured ? 'lg:scale-110 shadow-xl mt-10 sm:mt-0 pt-10 border-2 border-red-600' : 'pt-4 lg:hover:scale-105 hover:shadow-lg'}  transition-all cursor-pointer `}
             >
                 {
                     data.is_featured &&

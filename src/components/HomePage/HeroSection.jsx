@@ -26,7 +26,7 @@ const HeadingSection = (props) => {
 const HeroSection = () => {
     return (
         <div
-            className={`w-full max-w-7xl px-5 md:px-0 mx-auto my-20 md:flex md:items-center`}
+            className={`w-full max-w-7xl px-4  px-5 md:px-0 mx-auto my-20 md:flex md:items-center`}
         >
             <HeadingSection />
             <img className="w-full max-w-2xl" src="/images/bulb-img.svg" alt="" />

@@ -22,12 +22,12 @@ const ArrowRight = () => {
 const BecomeOurPartnerSection = () => {
     return (
         <>
-            <div className="max-w-7xl mx-auto mt-10">
+            <div className="max-w-7xl px-4  mx-auto mt-10">
                 <div className="relative">
                     <h3 className="text-[30px] text-white">Become Our <span className="text-red-600 italic">Partner</span></h3>
                     <span className="block bg-[#F25F1D] h-[2px] rounded-full w-[200px] bottom-0"></span>
                 </div>
-                <div className="flex items-center justify-between gap-5">
+                <div className="md:flex items-center justify-between  gap-5">
                     <div className="flex-1">
                         <img src={`${process.env.PUBLIC_URL}/images/Business strategy.png`} alt="" />
                     </div>

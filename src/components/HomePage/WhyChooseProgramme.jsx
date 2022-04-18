@@ -31,7 +31,7 @@ const WhyChooseProgramme = () => {
     return (
         <>
             <section className="mt-10">
-                <div className="max-w-7xl w-full mx-auto flex items-center justify-between gap-4">
+                <div className="max-w-7xl px-4  w-full mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-4">
                     <div className="flex-1">
                         <h3 className="text-white text-[30px]">Why choose <br /> <span className="text-red-600 italic">Business Partner Programme</span>?</h3>
                         <div className="mt-5">

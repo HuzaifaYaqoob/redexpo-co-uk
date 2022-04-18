@@ -18,7 +18,7 @@ const Footer = () => {
     return (
         <footer className="bg-[#232845] w-full py-[8px] mt-10">
             {/* <img src={'/images/redexpo-main.svg'} className="max-w-xs mx-auto" /> */}
-            <div className="max-w-7xl mx-auto w-full">
+            <div className="max-w-7xl px-4  mx-auto w-full">
                 <div className="flex items-center justify-between gap-4">
                     <h3 className="text-white">All right reserved Redexpo @ 2022</h3>
 

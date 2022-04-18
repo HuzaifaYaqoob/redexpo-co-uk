@@ -6,7 +6,7 @@ const BusinessPartnerProgrammSection = () => {
 
         <>
             <section className="mt-10">
-                <div className="max-w-7xl w-full mx-auto flex items-center justify-between gap-3">
+                <div className="max-w-7xl px-4 w-full mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-3">
                     <div className="flex-1">
                         <div className="relative mb-4">
                             <h3 className="text-[30px] text-white">Business <span className="text-[#F25F1D] italic">Partner Programme</span></h3>

@@ -46,7 +46,7 @@ const MemberShipSection = () => {
     return (
         <>
             <section className="mt-10">
-                <div className="max-w-7xl w-full mx-auto">
+                <div className="max-w-7xl px-4  w-full mx-auto">
                     <MemberShipHeader />
                     <div className="mt-5">
                         <MemberShipSwitch
@@ -55,7 +55,7 @@ const MemberShipSection = () => {
                                 setActiveMembership(active_membership == 'MONTHLY' ? 'YEARLY' : 'MONTHLY')
                             }}
                         />
-                        <div className="flex items-center justify-between gap-4 pb-5 mt-20">
+                        <div className="flex items-center flex-wrap justify-between gap-10 pb-5 mt-20">
                             {
                                 MEMBERSHIP_DATA.filter(itm => itm.duration == active_membership).length > 0 ?
                                     MEMBERSHIP_DATA.filter(itm => itm.duration == active_membership).map((membership, index) => {

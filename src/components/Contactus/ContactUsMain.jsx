@@ -132,7 +132,7 @@ const ContactUsMainSection = () => {
     const [active_tab, setActiveTab] = useState('MAIL')
     return (
         <>
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl px-4  mx-auto">
                 <div>
                     <h1 className="text-center text-[60px] text-white font-mono font-black">Get In Touch!</h1>
                     <p className="text-center text-white text-[18px] italic font-thin font-sans">Fill up this form and our Team will get back to you within 24 hours</p>

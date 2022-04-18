@@ -19,7 +19,7 @@ const OurServicesSection = () => {
     return (
         <div className="mb-10 mt-20 px-5 md:px-0">
             <h3 className="font-semibold text-3xl text-center mb-10 text-white">Our Popular <span className="text-red-600">Services</span></h3>
-            <div className="w-full max-w-7xl mx-auto flex  flex-wrap gap-4">
+            <div className="w-full max-w-7xl px-4  mx-auto flex  flex-wrap gap-4">
                 <ServiceCard color='indigo' imagePath='Design.svg' heading='UI/UX' text='We do design based on a long-term study of user behavior on sites of various subjects. This allows you to naturally bring a person to the desired action.' />
                 <ServiceCard featured color='yellow' imagePath='web-design.svg' heading='Web Design' text='We take your corporate identity as a basis, so that loyal users remember it and want to return to an aesthetic and convenient resource.' />
                 <ServiceCard color='yellow' imagePath='web-page.svg' heading='Web Development' text='We believe in building interactive web applications using latest technologies, To create experiences beyond our clients’ expectations.' />

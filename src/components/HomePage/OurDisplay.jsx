@@ -46,12 +46,12 @@ const OurDisplay = () => {
         <>
             <div className="relative pt-14 pb-20">
 
-                <div className="max-w-[1100px] mx-auto text-white flex items-center justify-between mb-10 relative">
+                <div className="max-w-[1100px] px-4 mx-auto text-white md:flex items-center justify-between mb-10 relative">
                     <div className="flex-1">
-                        <h3 className="text-6xl mb-8 font-bold leading-[70px]">We Create <br />Digital Products</h3>
-                        <p className="text-md text-gray-400 border-l border-gray-200 px-3">We create your digital Products,<br />Branding, Illustrations with well crafted <br />Design Team.</p>
+                        <h3 className="text-6xl mb-8 text-center md:text-left font-bold leading-[70px]">We Create <br />Digital Products</h3>
+                        <p className="text-md text-gray-400 text-center md:text-left md:border-l md:border-gray-200 px-3">We create your digital Products,<br className="hidden md:inline" />Branding, Illustrations with well crafted <br />Design Team.</p>
                     </div>
-                    <div className="flex-1 min-h-[400px] ">
+                    <div className="flex-1 min-h-[400px] mt-10 md:mt-0">
                         <div className="max-w-max mx-auto">
                             <div className="relative flex items-end" >
                                 <div

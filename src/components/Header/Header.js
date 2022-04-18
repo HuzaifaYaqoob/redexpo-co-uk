@@ -90,7 +90,7 @@ const Header = () => {
     const [menu_active, setMenuActive] = useState(false)
     return (
         <div className="w-full relative z-[100]">
-            <div className="relative w-full max-w-7xl mx-auto p-2 flex items-center justify-between">
+            <div className="relative w-full max-w-7xl px-4  mx-auto p-2 flex items-center justify-between">
                 <Logo />
                 {/* <HamburgerIcon menu_active={menu_active} setMenuActive={setMenuActive} />
                 <div
