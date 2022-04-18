@@ -43,10 +43,10 @@ const WhyChooseProgramme = () => {
                                 })
                             }
                         </div>
-                        <div className="mt-6 flex items-center gap-4">
-                            <GradientButton className='max-w-max'>
-                                <span className="flex items-center justify-between gap-2">
-                                    <span>
+                        <div className="mt-6 sm:flex items-center gap-4">
+                            <GradientButton className='max-w-max whitespace-nowrap'>
+                                <span className="flex items-center justify-between gap-2 whitespace-nowrap">
+                                    <span className="whitespace-nowrap">
                                         Contact Us Now
                                     </span>
                                     <span>
@@ -62,7 +62,7 @@ const WhyChooseProgramme = () => {
                                     </span>
                                 </span>
                             </GradientButton>
-                            <span className="text-gray-400">
+                            <span className="text-gray-400 mt-3 block sm:mt-0">
                                 or call us at <span className="font-bold text-white">+92-318-7834096</span>
                             </span>
                         </div>
