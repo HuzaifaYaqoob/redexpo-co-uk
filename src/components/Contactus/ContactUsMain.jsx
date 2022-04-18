@@ -18,7 +18,7 @@ const ServicesCard = ({ text, active_service, setActiveService }) => {
     return (
         <>
             <div
-                className={`cursor-pointer py-2 px-4 rounded-md box-border  ${active_service == text ? 'border border-orange-600' : 'bg-gray-100'}`}
+                className={`cursor-pointer py-2 px-4 rounded-md box-border border ${active_service == text ? ' border-orange-600' : 'bg-gray-100'}`}
                 onClick={() => {
                     setActiveService(text)
                 }}
@@ -39,7 +39,7 @@ const MailTab = () => {
                 <div>
                     <h3 className="text-gray-900 text-[19px]">Contact Form</h3>
                 </div>
-                <div className="flex justify-between items-stretch mt-4 gap-4">
+                <div className="md:flex justify-between items-stretch mt-4 gap-4">
                     <div className="flex-1">
                         <div className="text-gray-900">
                             <IconInputField
@@ -98,7 +98,7 @@ const MailTab = () => {
                         <ServicesCard setActiveService={setActiveService} active_service={active_service} text='Other' />
                     </div>
                     <div className="mt-4">
-                        <GradientButton className='text-center mx-auto w-max'>
+                        <GradientButton className='text-center md:mx-auto w-max'>
                             Send Message
                         </GradientButton>
                     </div>
@@ -113,7 +113,7 @@ const ContactCardSect = ({ text, icon, active, ...props }) => {
     return (
         <>
             <div
-                className={`max-w-[250px] w-full rounded-md ${active ? 'bg-gray-800' : 'hover:bg-red-600'} transition-all min-h-[100px] cursor-pointer px-4 py-1 flex flex-col items-center justify-center`}
+                className={`max-w-[250px] sm:mx-0 mx-auto w-full rounded-md ${active ? 'bg-gray-800' : 'hover:bg-red-600'} transition-all min-h-[100px] cursor-pointer px-4 py-1 flex flex-col items-center justify-center`}
                 onClick={() => {
                     props.onClick && props.onClick()
                 }}
@@ -137,7 +137,7 @@ const ContactUsMainSection = () => {
                     <h1 className="text-center text-[60px] text-white font-mono font-black">Get In Touch!</h1>
                     <p className="text-center text-white text-[18px] italic font-thin font-sans">Fill up this form and our Team will get back to you within 24 hours</p>
                 </div>
-                <div className="flex items-center justify-center gap-3 my-10">
+                <div className="sm:flex items-center justify-center gap-3 my-10">
                     <ContactCardSect
                         active={active_tab == 'PHONE'}
                         icon={
