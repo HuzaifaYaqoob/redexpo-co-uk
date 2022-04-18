@@ -6,11 +6,11 @@ import OutsideClickHandler from "react-outside-click-handler/build/OutsideClickH
 import { useNavigate } from "react-router-dom"
 
 
-const HamburgerIcon = ({ setMenuActive, menu_active }) => {
+export const HamburgerIcon = ({ setMenuActive, menu_active }) => {
     return (
         <>
             <div
-                className={`group origin-right ${menu_active ? 'rotate-90' : ''} transition-all duration-75 cursor-pointer `}
+                className={`group block md:hidden transition-all duration-75 cursor-pointer `}
                 onClick={() => {
                     setMenuActive(!menu_active)
                 }}
@@ -92,21 +92,6 @@ const Header = () => {
         <div className="w-full relative z-[100]">
             <div className="relative w-full max-w-7xl px-4  mx-auto p-2 flex items-center justify-between">
                 <Logo />
-                {/* <HamburgerIcon menu_active={menu_active} setMenuActive={setMenuActive} />
-                <div
-                    className={`text-white fixed bottom-2 left-1/2 -translate-x-1/2 ${menu_active ? 'h-[400px]' : 'h-0'} rounded-lg max-w-[700px] w-full backdrop-blur-lg bg-black bg-opacity-50 transition-all duration-300 `}
-                    style={{
-                        zIndex: 1000000
-                    }}
-                >
-                    <OutsideClickHandler
-                        onOutsideClick={() => {
-                            setMenuActive(false)
-                        }}
-                    >
-                        <Navigation />
-                    </OutsideClickHandler>
-                </div> */}
                 <Navigation />
             </div>
         </div >

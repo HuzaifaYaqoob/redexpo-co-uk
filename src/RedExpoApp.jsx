@@ -19,13 +19,15 @@ const RedExpoApp = () => {
             <BrowserRouter>
                 <div className="bg-[#0B1120] min-h-screen">
                     <Header />
-                    <Routes>
-                        <Route path="/" element={<HomePage />} />
-                        <Route path="/services" element={<ServicesPage />} />
-                        <Route path="/pricing" element={<PricingPage />} />
-                        <Route path="/contact-us" element={<ContactUsPage />} />
-                        <Route path="/about-us" element={<AboutUsPage />} />
-                    </Routes>
+                    <div className="z-0 relative">
+                        <Routes>
+                            <Route path="/" element={<HomePage />} />
+                            <Route path="/services" element={<ServicesPage />} />
+                            <Route path="/pricing" element={<PricingPage />} />
+                            <Route path="/contact-us" element={<ContactUsPage />} />
+                            <Route path="/about-us" element={<AboutUsPage />} />
+                        </Routes>
+                    </div>
                     <Footer />
                 </div>
             </BrowserRouter>
