@@ -76,7 +76,7 @@ const Logo = () => {
                     </defs>
                 </svg> */}
                 <div className="flex items-center justify-center gap-3">
-                    <img src={`${process.env.PUBLIC_URL}/images/logo.png`} className='w-[40px]' />
+                    <img src={`${process.env.PUBLIC_URL}/images/logo (2).png`} className='w-[40px]' />
                     <p className="text-[20px] text-white">RedExpo</p>
                 </div>
             </div>
