@@ -14,6 +14,7 @@ import BusinessPartnerProgrammSection from '../components/HomePage/BusinessPartn
 import MemberShipSection from '../components/Membership/MemberShipSection'
 import WhyChooseProgramme from '../components/HomePage/WhyChooseProgramme'
 import Footer from '../components/Footer/Footer'
+import ContactUsReDesign from '../components/Contactus/ContactUsRedesign'
 
 const HomePage = () => {
   return (
@@ -33,15 +34,16 @@ const HomePage = () => {
         {/* <HeroSection /> */}
         <ReliableCustomers />
         <OurServicesSection />
-        <div className='text-center mb-5 '>
+        {/* <div className='text-center mb-5 '>
           <h3 className='font-semibold text-2xl mb-4 text-white'>Got a new <span className='text-red-600 '>Project Idea?</span></h3>
           <div>
             <p className='text-sm text-gray-400 mb-2'>Call use for fast support at</p>
             <p className='text-sm text-orange-600 mb-4'>+92-318-783-4096</p>
           </div>
           <SplitLine text='or' />
-        </div>
-        <ContactUs />
+        </div> */}
+        {/* <ContactUs /> */}
+        <ContactUsReDesign />
         <BecomeOurPartnerSection />
         <BusinessPartnerProgrammSection />
         <MemberShipSection />
