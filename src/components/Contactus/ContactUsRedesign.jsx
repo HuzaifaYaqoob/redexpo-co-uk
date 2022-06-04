@@ -12,7 +12,7 @@ const FormSection = () => {
         }
         let s_code ;
         fetch(
-            APIBASE_URL,
+            APIBASE_URL + contact_url,
             {
                 method : 'POST',
                 body : post_form
