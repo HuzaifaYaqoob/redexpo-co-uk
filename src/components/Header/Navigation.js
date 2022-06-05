@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useLocation, useNavigate, useRoutes } from "react-router-dom"
+import RexButton from "../Form/RexButton"
 import { GradientButton } from "../Utility/Button"
 import { HamburgerIcon } from "./Header"
 
@@ -7,7 +8,7 @@ export const NavigationsLink = ({ text, to, active, ...props }) => {
     const navigate = useNavigate()
     return (
         <p
-            className={`cursor-pointer md:text-gray-300 text-gray-700 hover:text-gray-900  md:hover:text-white py-2 px-4 rounded relative flex items-center gap-2`}
+            className={`cursor-pointer md:text-gray-300 text-gray-700 hover:text-gray-900  md:hover:text-white px-4 rounded relative flex items-center gap-2`}
             onClick={() => {
                 props.setMenuActive(false)
                 navigate(to)
@@ -28,6 +29,7 @@ const Navigation = (props) => {
     const path = useLocation()?.pathname
     const [show_sm_nav, setSMNav] = useState(false)
     const [menu_active, setMenuActive] = useState(false)
+    const navigate = useNavigate()
 
 
     const ROUTES = {
@@ -58,7 +60,7 @@ const Navigation = (props) => {
     return (
         <div >
             <div
-                className={`flex-1 gap-1 z-[10000] p-4 ${menu_active ? 'block fixed top-[90px] left-1 right-1 bg-white rounded-lg text-gray-900' : 'hidden md:flex'}`}
+                className={`flex-1 gap-1 z-[10000] px-4 ${menu_active ? 'block fixed top-[90px] left-1 right-1 bg-white rounded-lg text-gray-900' : 'hidden md:flex'}`}
             >
                 <div
                     className={`absolute right-4 top-6 md:hidden z-[1000]`}
@@ -73,7 +75,13 @@ const Navigation = (props) => {
                 <NavigationsLink active={ROUTES.PRICING.includes(path)} text='Pricing' to='/pricing' setMenuActive={setMenuActive} />
                 <NavigationsLink active={ROUTES.CONTACT.includes(path)} text='Contact Us' to='/contact-us' setMenuActive={setMenuActive} />
                 <NavigationsLink active={ROUTES.ABOUT.includes(path)} text='About Us' to='/about-us' setMenuActive={setMenuActive} />
-                <GradientButton>Get a qoute</GradientButton>
+                {/* <GradientButton>Get a qoute</GradientButton> */}
+                <RexButton
+                 text='Get a quote' 
+                 onClick={()=>{
+                    navigate('/contact-us')
+                 }}
+                />
             </div>
 
             <HamburgerIcon menu_active={menu_active} setMenuActive={setMenuActive} />

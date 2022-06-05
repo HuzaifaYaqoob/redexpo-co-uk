@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { APIBASE_URL, contact_url } from "../../Redux/api_constants"
+import RexButton from "../Form/RexButton"
 
 
 const FormSection = () => {
@@ -7,31 +8,31 @@ const FormSection = () => {
 
     const formSubmit = (e) => {
         const post_form = new FormData
-        for (let dt in form_data){
-            post_form.append(dt , form_data[dt])
+        for (let dt in form_data) {
+            post_form.append(dt, form_data[dt])
         }
-        let s_code ;
+        let s_code;
         fetch(
             APIBASE_URL + contact_url,
             {
-                method : 'POST',
-                body : post_form
+                method: 'POST',
+                body: post_form
             }
         )
-        .then(response =>{
-            s_code = response.status
-            if (response.ok){
-                return response.json()
-            }
-        })
-        .then(data =>{
-            if(s_code == 200){
+            .then(response => {
+                s_code = response.status
+                if (response.ok) {
+                    return response.json()
+                }
+            })
+            .then(data => {
+                if (s_code == 200) {
 
-            }
-        })
-        .catch(err =>{
-            console.log(err)
-        })
+                }
+            })
+            .catch(err => {
+                console.log(err)
+            })
     }
 
     return (
@@ -131,10 +132,14 @@ const FormSection = () => {
                         </div>
                     </div>
                     <div>
-                        <button
+                        <RexButton
+                            onClick={formSubmit}
+                            text='Send Message'
+                        />
+                        {/* <button
                             className="bg-[#EA580C] text-white px-3 py-1.5 rounded-full max-w-max"
                             onClick={formSubmit}
-                        >Send Message</button>
+                        >Send Message</button> */}
                     </div>
                 </div>
             </div>
