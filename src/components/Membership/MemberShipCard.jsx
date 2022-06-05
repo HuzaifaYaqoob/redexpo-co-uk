@@ -1,3 +1,4 @@
+import RexButton from "../Form/RexButton"
 
 
 const RightSymbol = () => {
@@ -84,9 +85,10 @@ const MemberShipCard = ({ data, ...props }) => {
                         })
                     }
                 </div>
-                <div className={`w-max mx-auto border transition-all px-3 py-1.5 whitespace-nowrap max-w-max rounded-md mt-4 ${data.is_featured ? 'bg-red-600 text-white border-red-600' : 'text-gray-800 border-red-600 hover:bg-red-600 hover:text-white'}`}>
-                    <p className="whitespace-nowrap max-w-max">Subscribe Now</p>
-                </div>
+                {/* <div className={`w-max mx-auto border transition-all px-3 py-1.5 whitespace-nowrap max-w-max rounded-md mt-4 ${data.is_featured ? 'bg-red-600 text-white border-red-600' : 'text-gray-800 border-red-600 hover:bg-red-600 hover:text-white'}`}> */}
+                    {/* <p className="whitespace-nowrap max-w-max">Subscribe Now</p> */}
+                    <RexButton text='Subscribe Now' className='mx-auto' />
+                {/* </div> */}
             </div>
         </>
     )

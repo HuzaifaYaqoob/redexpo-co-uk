@@ -1,3 +1,4 @@
+import RexButton from "../Form/RexButton"
 import { GradientButton } from "../Utility/Button"
 
 
@@ -14,7 +15,7 @@ const BusinessPartnerProgrammSection = () => {
                         </div>
                         <p className="text-white font-light">We help startups/Business or Interprises to grow their business with a Partnership of 50%. In this Partner Programme, We provide all digital Services e.g UI/UX Designing, Web/Mobile App Development, SEO (Search Engin Optimizing), Digital Marketing etc.</p>
                         <div className="mt-10 flex items-center gap-3">
-                            <GradientButton className='w-max'>
+                            {/* <GradientButton className='w-max'>
                                 <span className="flex items-center gap-2">
                                     <span>
                                         <svg className="-rotate-90" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -31,7 +32,8 @@ const BusinessPartnerProgrammSection = () => {
                                         See More
                                     </span>
                                 </span>
-                            </GradientButton>
+                            </GradientButton> */}
+                            <RexButton text='See More' />
                             <div className="w-max px-4 py-2 rounded-md border border-[#F25F1D] text-white cursor-pointer">
                                 Terms & Conditions
                             </div>

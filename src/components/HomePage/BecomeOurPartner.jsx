@@ -1,3 +1,4 @@
+import RexButton from "../Form/RexButton"
 import { GradientButton } from "../Utility/Button"
 
 
@@ -50,14 +51,15 @@ const BecomeOurPartnerSection = () => {
                                     Everything include in Subscription Packages
                                 </span>
                             </p>
-                            <GradientButton className='max-w-max flex items-center gap-2 mt-5'>
+                            {/* <GradientButton className='max-w-max flex items-center gap-2 mt-5'>
                                 <span className="flex items-center gap-2">
                                     <ArrowRight />
                                     <span>
                                         See More
                                     </span>
                                 </span>
-                            </GradientButton>
+                            </GradientButton> */}
+                            <RexButton text='See More' />
                         </div>
                     </div>
                 </div>

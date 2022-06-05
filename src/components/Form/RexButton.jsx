@@ -305,7 +305,7 @@ class RexButton extends React.Component {
             <>
                 <div className='flex'>
                     <svg
-                        className="cursor-pointer "
+                        className={`cursor-pointer ${this.props.className}`}
                         data-color2='#EA580C'
                         data-text={this.props.text}
                         data-width={150}
@@ -321,7 +321,8 @@ class RexButton extends React.Component {
 
 RexButton.defaultProps = {
     text: 'Hello',
-    onClick: () => { }
+    onClick: () => { },
+    
 }
 
 export default RexButton
