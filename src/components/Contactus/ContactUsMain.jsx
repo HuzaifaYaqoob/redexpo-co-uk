@@ -108,6 +108,16 @@ const MailTab = () => {
     )
 }
 
+const SelectAbleService = ({ text }) => {
+    return (
+        <>
+            <div className="px-7 py-3 bg-[#EA580C] rounded-md text-white cursor-pointer">
+                {text}
+            </div>
+        </>
+    )
+}
+
 
 const ContactCardSect = ({ text, icon, active, ...props }) => {
     return (
@@ -130,14 +140,19 @@ const ContactCardSect = ({ text, icon, active, ...props }) => {
 
 const ContactUsMainSection = () => {
     const [active_tab, setActiveTab] = useState('MAIL')
+    const [selected_items, setSelectedItems] = useState([])
+
+    const SERVICES = [
+        'Web Design', 'UI/UX', 'Graphic Design', 'Figma Expert', 'Web Development', 'Prototyping', 'FrontEnd Development', 'BackEnd Development', 'Machine Learning', 'Search Engine Optimization', 'Mobile App'
+    ]
     return (
         <>
-            <div className="max-w-7xl px-4  mx-auto">
-                <div>
+            <div className="px-4  mx-auto">
+                <div className="mb-10">
                     <h1 className="text-center text-[60px] text-white font-mono font-black">Get In Touch!</h1>
                     <p className="text-center text-white text-[18px] italic font-thin font-sans">Fill up this form and our Team will get back to you within 24 hours</p>
                 </div>
-                <div className="sm:flex items-center justify-center gap-3 my-10">
+                {/* <div className="sm:flex items-center justify-center gap-3 my-10">
                     <ContactCardSect
                         active={active_tab == 'PHONE'}
                         icon={
@@ -177,6 +192,47 @@ const ContactUsMainSection = () => {
                             active_tab == 'PHONE' &&
                             <PhoneTab />
                     }
+                </div> */}
+                <div className="max-w-[1600px] w-full mx-4 bg-white rounded-lg lg:mx-auto">
+                    <div className="px-10 py-20">
+                        <h1 className="text-5xl font-bold text-gray-800 mb-10">Now, About your Project...</h1>
+                        <div className="flex items-start gap-4 justify-between">
+                            <div className="flex-1">
+                                <p className="text-lg font-medium mb-4">We like beign on a first-name basis, but it also helps us get in touch with you.</p>
+                                <div className="flex items-center justify-between gap-3 mb-10">
+                                    <div className="flex-1">
+                                        <p className="mb-2">What is your full name?</p>
+                                        <input type="text" placeholder="You Name..." className="focus:border-[#EA580C] text-[16px] w-full focus:border-l-[8px] transition-all outline-none border-gray-300 border-2 rounded-md py-3 px-4" />
+                                    </div>
+                                    <div className="flex-1">
+                                        <p className="mb-2">What is your Email address?</p>
+                                        <input type="email" placeholder="yourname@example.com" className="focus:border-[#EA580C] text-[16px] w-full focus:border-l-[8px] transition-all outline-none border-gray-300 border-2 rounded-md py-3 px-4" />
+                                    </div>
+                                </div>
+                                <div>
+                                    What sort of creative work do you need help with?
+                                    <div className="flex flex-wrap gap-3">
+                                        {
+                                            SERVICES.map((service, index) => {
+                                                return (
+                                                    <>
+                                                        <SelectAbleService text={service} key={index} active={selected_items.includes(service)} />
+                                                    </>
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex-1">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+
                 </div>
             </div>
         </>
